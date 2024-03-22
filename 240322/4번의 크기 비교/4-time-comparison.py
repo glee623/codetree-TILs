@@ -13,7 +13,7 @@ if a > d:
     print(1)
 else:
     print(0)
-if a > d:
+if a > e:
     print(1)
 else:
     print(0)
