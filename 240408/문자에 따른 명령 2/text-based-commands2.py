@@ -10,7 +10,6 @@ for char in sen:
     elif char == 'R':
         move =(move +1) % 4
     else:
-        x = dx[move]
-        y = dy[move]
+        x, y = x + dx[move], y + dy[move]
         
 print(x,y)
