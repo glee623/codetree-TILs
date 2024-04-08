@@ -1,13 +1,16 @@
 sen = list(input())
 
 x, y = 0,0
-dx, dy = 0, 1
+dx = [1, 0, -1, 0]
+dy = [0, -1, 0, 1]
+move = 3
 for char in sen:
     if char == 'L':
-        dx, dy = dy *-1, dx
+        move =(move -1 +4) % 4
     elif char == 'R':
-        dx, dy = dy, dx *-1
+        move =(move +1) % 4
     else:
-        x += dx
-        y += dy
+        x = dx[move]
+        y = dy[move]
+        
 print(x,y)
